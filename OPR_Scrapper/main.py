@@ -27,9 +27,8 @@ password_field.send_keys('Dedicate!23')
 
 sleep(30)
 
-driver.get('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122')
-# driver.get('https://github.com/settings/profile')
 
+driver.get('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122')
 
 #selenium code to perform http requests and access elements that need to wait for javascript scripts to finish running in order to have data.
 sleep(1)
