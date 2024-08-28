@@ -17,15 +17,14 @@ wait = WebDriverWait(driver, 10)
 
 driver.get('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122')
 
-username_field = wait.until(EC.presence_of_element_located((By.NAME, 'UserName')))
-password_field = wait.until(EC.presence_of_element_located((By.NAME, 'Password')))
-
+username_field = driver.find_element(By.NAME, 'UserName')
+password_field = driver.find_element(By.NAME, 'Password')
 
 username_field.send_keys('JMaraj-gheesan@energy.gov.tt')
 password_field.send_keys('Dedicate!23')
 
 # Assuming manual captcha or 2FA
-WebDriverWait(driver, 30).until(EC.url_to_be('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122'))
+WebDriverWait(driver, 60).until(EC.url_to_be('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122'))
 
 driver.get('https://depository.oprtt.org/PublicBodyLOB/Prequalified?id=122')
 
