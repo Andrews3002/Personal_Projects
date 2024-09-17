@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+    z-index: 1;
+}
+hmtl, body{
+    background: var(--light-cyan);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+html{
+    font-size: 20px;
+}
+:root{
+    --light-cyan: #6DBAC6;
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --transparent: rgba(0, 0, 0, 0.2);
+    --font-group1: 0.7rem;
+    --font-group2: 0.8rem;
+    --font-group3: 1rem;
+    --font-group4: 1.5rem;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: fixed;
+    background: var(--light-cyan);
+    z-index: 1000;
+    top: 0px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: var(--font-group2);
+}
+h1{
+    font-size: var(--font-group4);
+}
+h2{
+    font-size: var(--font-group3);
+}
+p{
+    font-size: var(--font-group1);
+}
+.content-container1{
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content-container1 div{
+    position: relative;
+    height: 75%;
+    width: 42%;
+    margin-left: 6%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: blueviolet;
+}
+.content-container1 div .picture {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    width: 100%;
+    background-image: url("picture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content-container1 img{
+    height: 100%;
+    width: 58%;
+    position: relative;
+}
