@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jacquarda+Bastarda+9&family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/programming.png">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">Alexangelo Andrews</div>
+        <div class="logo">
+            <img src="/static/images/programming.png" alt="logo">
+            <p id="logoText">Alexangelo</p>
+        </div>
         <ul>
-            <li>Home</li>
-            <li>Hire Me</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Resume</li>
+            <li class="navbar-element" id="homeNav">Home</li>
+            <li class="navbar-element" id="projectsNav">Projects</li>
+            <li class="navbar-element" id="skillsNav">Skills</li>
+            <li class="navbar-element" id="resumeNav">Resume</li>
+            <li class="navbar-element" id="aboutNav">About</li>
+            <li class="navbar-element" id="contactNav">Contact</li>
         </ul>
     </div>
 
